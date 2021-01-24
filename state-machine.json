@@ -1,0 +1,17 @@
+﻿{
+  "Comment": "State Machine",
+  "StartAt": "IncomingGraphTypeTask",
+  "States": {
+    "HandleIncomingGraphType": {
+      "Type": "Task",
+      "Resource": "${IncomingGraphTypeTask.Arn}",
+      "Next": "WaitToActivate"
+    },
+    "ProcessGraphType": {
+      "Type": "Task",
+      "Resource": "${ProcessGraphTask.Arn}",
+      "f": null,
+      "End": true
+    }
+  }
+}
