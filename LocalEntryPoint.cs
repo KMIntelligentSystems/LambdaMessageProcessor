@@ -18,6 +18,7 @@ namespace MessageProcessor
         {
             Configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
+               // .AddSystemsManager("/lambda")
                 .Build();
            
 

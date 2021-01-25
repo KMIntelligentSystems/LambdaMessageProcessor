@@ -130,7 +130,8 @@ namespace MessageProcessor
             
             try
             {
-                var awsCredentials = new BasicAWSCredentials("AKIAUCTAWCDCVW4OY5R5", "Nh6KeyODYrPhYCikuq8obbfAH6Rjj/JbPX5TCaNb");
+
+               
                 var region = RegionEndpoint.GetBySystemName("us-east-1");
 
               
